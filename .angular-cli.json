@@ -1,0 +1,115 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "woodi"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/jquery.slimscroll.css",
+        "assets/css/project.css",
+        "assets/css/horizontalTimeLine.css",
+        "assets/css/buttons.dataTables.min.css",
+        "assets/css/dataTables.bootstrap4.min.css",
+        "assets/css/responsive.dataTables.min.css",
+        "assets/css/fixedHeader.dataTables.min.css",
+        "assets/css/font-awesome.min.css",
+        "assets/css/glyphicons.css",
+        "assets/css/simple-line-icons.css",
+        "assets/css/ameffectsanimation.css",
+        "assets/css/buttons.css",
+        "assets/css/animate.css",
+        "assets/css/main.css",
+        "assets/css/fullcalendar.css",
+        "assets/css/fullcalendar.print.css",
+        "assets/css/theme.css",
+        "assets/css/main.media.css",
+        "assets/css/appdemo.css"
+        
+        
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/tether/dist/js/tether.min.js",
+        "../node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
+        "../node_modules/datatables-buttons/js/dataTables.buttons.js",
+        "../node_modules/jquery-mobile/js/jquery.mobile.js",
+        "./assets/js/vendor/hTimeline.js",
+        "./assets/js/vendor/amcharts/amcharts.js",
+        "./assets/js/vendor/amcharts/gauge.js",
+        "./assets/js/vendor/amcharts/serial.js",
+        "./assets/js/vendor/amcharts/pie.js",
+        "./assets/js/vendor/amcharts/gantt.js",
+        "./assets/js/vendor/amcharts/funnel.js",
+        "./assets/js/vendor/amcharts/radar.js",
+        "./assets/js/vendor/amcharts/amstock.js",
+        "./assets/js/vendor/amcharts/ammap.js",
+        "./assets/js/vendor/amcharts/worldLow.js",
+        "./assets/js/vendor/amcharts/light.js",
+        "./assets/js/vendor/lib/moment.min.js",
+        "./assets/js/vendor/lib/jquery-ui.custom.min.js",
+        "./assets/js/vendor/fullcalendar.min.js",
+        "./assets/js/vendor/icheck.js",
+        "./assets/js/vendor/jquery.dataTables.js",
+        "./assets/js/vendor/buttons.flash.min.js",
+        "./assets/js/vendor/jszip.min.js",
+        "./assets/js/vendor/pdfmake.min.js",
+        "./assets/js/vendor/vfs_fonts.js",
+        "./assets/js/vendor/buttons.html5.min.js",
+        "./assets/js/vendor/buttons.print.min.js",
+        "./assets/js/vendor/dataTables.responsive.min.js",
+       
+        "./assets/js/dashboard1.js",
+        "./assets/js/vendor/pace/pace.min.js",
+        "./assets/js/main.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
