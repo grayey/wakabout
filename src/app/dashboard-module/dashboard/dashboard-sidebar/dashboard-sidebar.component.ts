@@ -31,24 +31,20 @@ export class DashboardSidebarComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit() {
-
+    
+    this.createScript('assets/js/vendor/jquery.slimscroll.js');
 
   }
 
-  // ngAfterViewChecked(){
-  //   this.createScript('assets/js/main.js');
-  //   this.createScript('assets/js/vendor/jquery.slimscroll.js');
-  //   this.createScript('assets/js/vendor/jquery.min.js');
-  // }
+ 
 
   ngAfterViewInit() {
-  //  var  mainUrl = 'assets/js/main.js';
-  //  var slimScrollUrl = 'assets/js/vendor/jquery.slimscroll.js';
-   
+  
+  
   this.createScript('assets/js/main.js');
-  this.createScript('assets/js/vendor/jquery.slimscroll.js');
+ 
     
-  this.createScript('assets/js/vendor/jquery.min.js');
+  
  
   }
 }
