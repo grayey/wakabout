@@ -1,4 +1,8 @@
 .page-sidebar{
     max-height: 1000px;
-    
+
+}
+
+.slimScrollBar {
+  background: #e58e0e !important;
 }

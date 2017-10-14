@@ -17,7 +17,7 @@ export const runDashboard = () => {
 
     // scroll top click function
     $('.scrollup').on('click', function () {
-      $("html, body").animate({
+      $('html, body').animate({
         scrollTop: 0
       }, 600);
       return false;
@@ -25,18 +25,18 @@ export const runDashboard = () => {
 
     // left  sidebar close function
     $('.library-menu').on('click', function (e) {
-      $(this).toggleClass("active");
+      $(this).toggleClass('active');
       $('body').toggleClass('page-sidebar-closed');
       e.preventDefault();
     });
 
     // left sidebar togal
     $('.nav-link').on('click', function () {
-      if ($(this).parent("li").hasClass('open')) {
-        $(this).parent("li").removeClass('open');
+      if ($(this).parent('li').hasClass('open')) {
+        $(this).parent('li').removeClass('open');
       } else {
         $('.nav-item').removeClass('open');
-        $(this).parents("li").addClass('open');
+        $(this).parents('li').addClass('open');
       }
     });
 
@@ -52,7 +52,11 @@ export const runDashboard = () => {
     // apply slimScroll
     const scrollH = $(window).height();
     $('.page-sidebar-fixed .page-sidebar-menu').slimScroll({
-      height: scrollH - 45
+      height: scrollH - 45,
+      color: '#eea000',
+      railVisible: true,
+      railColor: '#eee',
+      railOpacity: 1,
     });
 
     // sidebar search click
@@ -64,15 +68,15 @@ export const runDashboard = () => {
 
     // ibox tools close button
     $('.ibox-tools .close-link').on('click', function () {
-      $(this).parents(".ibox").hide();
+      $(this).parents('.ibox').hide();
     });
 
     // header expanded on click
-    $(".search-form .input-group .form-control").focus(function () {
-      $(".page-header.navbar .search-form.search-form-expanded").addClass("open");
+    $('.search-form .input-group .form-control').focus(function () {
+      $('.page-header.navbar .search-form.search-form-expanded').addClass('open');
     })
       .focusout(function () {
-        $(".page-header.navbar .search-form.search-form-expanded").removeClass("open");
+        $('.page-header.navbar .search-form.search-form-expanded').removeClass('open');
       });
 
 
@@ -137,7 +141,7 @@ export const runDashboard = () => {
   }
 
 // apply tooltip
-  jQuery('[data-toggle="tooltip"]').tooltip();
-  jQuery('[data-toggle="popover"]').popover();
+  jQuery("[data-toggle='tooltip']").tooltip();
+  jQuery("[data-toggle='popover']").popover();
 
 };

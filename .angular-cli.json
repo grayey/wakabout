@@ -75,10 +75,8 @@
         "./assets/js/vendor/buttons.html5.min.js",
         "./assets/js/vendor/buttons.print.min.js",
         "./assets/js/vendor/dataTables.responsive.min.js",
-
         "./assets/js/dashboard1.js",
-        "./assets/js/vendor/pace/pace.min.js",
-        "./assets/js/main.js"
+        "./assets/js/vendor/pace/pace.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
