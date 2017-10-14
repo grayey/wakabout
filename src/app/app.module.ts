@@ -1,24 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DashboardModuleModule} from './dashboard/dashboard.module';
-
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppComponent } from './app.component';
-
-
-
-
+import {HomeModuleModule} from "./home/home.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DashboardComponent
-
-
+    AppComponent
   ],
 
   imports: [
     BrowserModule,
+    HomeModuleModule,
     DashboardModuleModule
   ],
 
