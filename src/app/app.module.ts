@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { DashboardModuleModule} from './dashboard-module/dashboard-module.module';
+import { DashboardModuleModule} from './dashboard/dashboard.module';
 
-import { DashboardComponent } from './dashboard-module/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppComponent } from './app.component';
 
 
@@ -14,14 +14,14 @@ import { AppComponent } from './app.component';
     AppComponent,
     DashboardComponent
 
-   
+
   ],
 
   imports: [
     BrowserModule,
     DashboardModuleModule
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,7 @@
+
 (function($) {
     "use strict";
-    // window scroll function    
+    // window scroll function
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
@@ -33,7 +34,7 @@
             $('.nav-item').removeClass('open');
             $(this).parents("li").addClass('open');
         }
-    });    
+    });
 
     $('.menu-toggler.sidebar-toggler').on('click', function() {
         $('body').toggleClass('page-sidebar-closed');
@@ -44,8 +45,8 @@
            $('.top-menu .navbar-nav').toggleClass('hidden-sm-down');
         });
 
-    // apply slimScroll 
-    var scrollH = $(window).height();    
+    // apply slimScroll
+    var scrollH = $(window).height();
     $('.page-sidebar-fixed .page-sidebar-menu').slimScroll({
         height: scrollH - 45
     });
@@ -57,7 +58,7 @@
         }
     });
 
-    // ibox tools close button 
+    // ibox tools close button
     $('.ibox-tools .close-link').on('click', function() {
         $(this).parents(".ibox").hide();
     });
@@ -103,32 +104,32 @@
 
 // window resize
 $(window).resize(function() {
-    var scrollH = $(window).height();    
+    var scrollH = $(window).height();
     $('.page-sidebar-fixed .page-sidebar-menu').slimScroll({
         height: scrollH - 45
     });
-    
+
 });
 
 function toggleFullScreen() {
-  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||
    (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-    if (document.documentElement.requestFullScreen) {  
-      document.documentElement.requestFullScreen();  
-    } else if (document.documentElement.mozRequestFullScreen) {  
-      document.documentElement.mozRequestFullScreen();  
-    } else if (document.documentElement.webkitRequestFullScreen) {  
-      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
-    }  
-  } else {  
-    if (document.cancelFullScreen) {  
-      document.cancelFullScreen();  
-    } else if (document.mozCancelFullScreen) {  
-      document.mozCancelFullScreen();  
-    } else if (document.webkitCancelFullScreen) {  
-      document.webkitCancelFullScreen();  
-    }  
-  }  
+    if (document.documentElement.requestFullScreen) {
+      document.documentElement.requestFullScreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullScreen) {
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+    }
+  }
 }
 
 // apply tooltip

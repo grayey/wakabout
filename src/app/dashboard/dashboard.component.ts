@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-declare const $:any; 
-
+import * as runMe from '../../assets/js/main';
+declare const $: any;
 
 @Component({
   selector: 'app-dashboard',
@@ -10,30 +9,16 @@ declare const $:any;
 })
 export class DashboardComponent implements OnInit {
 
+
+  static onLoadInit() {
+    runMe.runDashboard();
+  }
+
   constructor() { }
 
 
-  onLoadInit() {
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   ngOnInit() {
+    DashboardComponent.onLoadInit();
   }
 
 
